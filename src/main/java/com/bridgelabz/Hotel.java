@@ -2,18 +2,34 @@ package com.bridgelabz;
 
 public class Hotel {
         String hotelName;
-        double hotelRate;
+        int hotelRentRate;
 
-        public Hotel(String hotelName, double hotelRate) {
-            this.hotelName = hotelName;
-            this.hotelRate = hotelRate;
+        public Hotel(String hotelName, int hotelRentRate) {
+                this.hotelName = hotelName;
+                this.hotelRentRate = hotelRentRate;
+        }
+
+        public String getHotelName() {
+                return hotelName;
+        }
+
+        public void setHotelName(String hotelName) {
+                this.hotelName = hotelName;
+        }
+
+        public int getHotelRentRate() {
+                return hotelRentRate;
+        }
+
+        public void setHotelRentRate(int hotelRentRate) {
+                this.hotelRentRate = hotelRentRate;
         }
 
         @Override
         public String toString() {
-            return "Hotel{" +
-                    "hotelName='" + hotelName + '\'' +
-                    ", hotelRate=" + hotelRate +
-                    '}';
+                return "Hotel{" +
+                        "hotelName='" + hotelName + '\'' +
+                        ", hotelRentRate=" + hotelRentRate +
+                        '}';
         }
 }
